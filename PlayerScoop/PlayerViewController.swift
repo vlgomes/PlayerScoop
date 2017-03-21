@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlayerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class PlayerViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISplitViewControllerDelegate {
     
     @IBOutlet var tableView: UITableView!
     
@@ -21,7 +21,13 @@ class PlayerViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableView.dataSource = self
         self.tableView.delegate = self
 
-        
+        //the split view controller will always be visible
+        self.splitViewController?.preferredDisplayMode = .allVisible
+        self.splitViewController?.delegate = self
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        return true
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
