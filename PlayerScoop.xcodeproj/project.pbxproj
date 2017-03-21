@@ -12,6 +12,7 @@
 		27F9754E1E814E89009D803A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F9754D1E814E89009D803A /* Assets.xcassets */; };
 		27F975511E814E89009D803A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F9754F1E814E89009D803A /* LaunchScreen.storyboard */; };
 		27F975591E817FF3009D803A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F975581E817FF3009D803A /* Player.swift */; };
+		27F9755B1E818A34009D803A /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9755A1E818A34009D803A /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		27F975501E814E89009D803A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F975521E814E89009D803A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F975581E817FF3009D803A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		27F9755A1E818A34009D803A /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		27F975451E814E89009D803A /* PlayerScoop */ = {
 			isa = PBXGroup;
 			children = (
+				27F9755D1E818A6B009D803A /* Model */,
+				27F9755C1E818A60009D803A /* Controller */,
 				27F975461E814E89009D803A /* AppDelegate.swift */,
-				27F975581E817FF3009D803A /* Player.swift */,
 				27F9754A1E814E89009D803A /* Main.storyboard */,
 				27F9754D1E814E89009D803A /* Assets.xcassets */,
 				27F9754F1E814E89009D803A /* LaunchScreen.storyboard */,
 				27F975521E814E89009D803A /* Info.plist */,
 			);
 			path = PlayerScoop;
+			sourceTree = "<group>";
+		};
+		27F9755C1E818A60009D803A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27F9755A1E818A34009D803A /* PlayerViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		27F9755D1E818A6B009D803A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27F975581E817FF3009D803A /* Player.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			files = (
 				27F975591E817FF3009D803A /* Player.swift in Sources */,
 				27F975471E814E89009D803A /* AppDelegate.swift in Sources */,
+				27F9755B1E818A34009D803A /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-1092" y="-471"/>
         </scene>
-        <!--View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="ULq-uA-TH2">
             <objects>
-                <viewController id="gE7-yf-Fp7" sceneMemberID="viewController">
+                <viewController id="gE7-yf-Fp7" customClass="PlayerViewController" customModule="PlayerScoop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dve-iY-5np"/>
                         <viewControllerLayoutGuide type="bottom" id="Z07-WO-5e3"/>
@@ -33,8 +33,23 @@
                     <view key="view" contentMode="scaleToFill" id="zTL-ea-MF0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.15066558518886453" green="1" blue="0.14888830066529513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Si-yx-soX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z07-WO-5e3" firstAttribute="top" secondItem="0Si-yx-soX" secondAttribute="bottom" id="DpK-ha-iE1"/>
+                            <constraint firstAttribute="trailing" secondItem="0Si-yx-soX" secondAttribute="trailing" id="fz0-KJ-UhH"/>
+                            <constraint firstItem="0Si-yx-soX" firstAttribute="top" secondItem="Dve-iY-5np" secondAttribute="bottom" id="mbR-Ap-vdi"/>
+                            <constraint firstItem="0Si-yx-soX" firstAttribute="leading" secondItem="zTL-ea-MF0" secondAttribute="leading" id="yZQ-eO-T9A"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="0Si-yx-soX" id="IOX-3E-BXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izo-Iu-qt1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +66,7 @@
                     <view key="view" contentMode="scaleToFill" id="mQ3-fs-Ye1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.93881954706317383" blue="0.16783069479677937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Air-Hr-w8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
