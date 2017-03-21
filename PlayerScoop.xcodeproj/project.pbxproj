@@ -13,6 +13,7 @@
 		27F975511E814E89009D803A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F9754F1E814E89009D803A /* LaunchScreen.storyboard */; };
 		27F975591E817FF3009D803A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F975581E817FF3009D803A /* Player.swift */; };
 		27F9755B1E818A34009D803A /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9755A1E818A34009D803A /* PlayerViewController.swift */; };
+		27F9755F1E819B40009D803A /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F9755E1E819B40009D803A /* PlayerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		27F975521E814E89009D803A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F975581E817FF3009D803A /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		27F9755A1E818A34009D803A /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		27F9755E1E819B40009D803A /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				27F9755A1E818A34009D803A /* PlayerViewController.swift */,
+				27F9755E1E819B40009D803A /* PlayerDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F9755F1E819B40009D803A /* PlayerDetailViewController.swift in Sources */,
 				27F975591E817FF3009D803A /* Player.swift in Sources */,
 				27F975471E814E89009D803A /* AppDelegate.swift in Sources */,
 				27F9755B1E818A34009D803A /* PlayerViewController.swift in Sources */,

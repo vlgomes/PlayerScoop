@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="633" y="-881"/>
         </scene>
-        <!--View Controller-->
+        <!--Player Detail View Controller-->
         <scene sceneID="vPY-RN-uSx">
             <objects>
-                <viewController id="DlL-nZ-vOy" sceneMemberID="viewController">
+                <viewController id="DlL-nZ-vOy" customClass="PlayerDetailViewController" customModule="PlayerScoop" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qNy-VP-t2b"/>
                         <viewControllerLayoutGuide type="bottom" id="Mtb-uS-4Md"/>
@@ -84,12 +84,101 @@
                     <view key="view" contentMode="scaleToFill" id="aYh-cN-zXr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.15066558520000001" green="1" blue="0.1488883007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-qI-oju">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gFE-Kh-RIZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="612"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zlatan" translatesAutoresizingMaskIntoConstraints="NO" id="WXk-zc-itI">
+                                                <rect key="frame" x="67.5" y="0.0" width="240" height="240"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="Yhk-Zw-muR"/>
+                                                    <constraint firstAttribute="height" constant="240" id="wFq-AU-R82"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zlatan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpd-Am-n8p">
+                                                <rect key="frame" x="139" y="255" width="97.5" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbM-VI-Nep">
+                                                <rect key="frame" x="165.5" y="312" width="44.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qau-lE-pDX">
+                                                <rect key="frame" x="172.5" y="357" width="30.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ito-Ns-7E8">
+                                                <rect key="frame" x="161.5" y="402" width="52" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manchester United" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfn-1z-PA6">
+                                                <rect key="frame" x="82" y="447" width="211.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nationality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-dr-yV3">
+                                                <rect key="frame" x="128.5" y="492" width="118.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sweden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOz-cb-i0O">
+                                                <rect key="frame" x="142.5" y="537" width="90" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2J-qU-5T0">
+                                                <rect key="frame" x="67.5" y="582" width="240" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="EXv-Gp-MzH"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gFE-Kh-RIZ" firstAttribute="leading" secondItem="ecp-qI-oju" secondAttribute="leading" id="72Q-An-lML"/>
+                                    <constraint firstAttribute="trailing" secondItem="gFE-Kh-RIZ" secondAttribute="trailing" id="Yif-Oi-JLD"/>
+                                    <constraint firstAttribute="bottom" secondItem="gFE-Kh-RIZ" secondAttribute="bottom" id="gIU-5N-i0l"/>
+                                    <constraint firstItem="gFE-Kh-RIZ" firstAttribute="width" secondItem="ecp-qI-oju" secondAttribute="width" id="kzs-Du-hGy"/>
+                                    <constraint firstItem="gFE-Kh-RIZ" firstAttribute="top" secondItem="ecp-qI-oju" secondAttribute="top" id="uc0-Xh-FNR"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ecp-qI-oju" firstAttribute="leading" secondItem="aYh-cN-zXr" secondAttribute="leading" id="8yY-5D-89V"/>
+                            <constraint firstItem="Mtb-uS-4Md" firstAttribute="top" secondItem="ecp-qI-oju" secondAttribute="bottom" id="Agu-2O-EZD"/>
+                            <constraint firstItem="ecp-qI-oju" firstAttribute="top" secondItem="qNy-VP-t2b" secondAttribute="bottom" id="dlf-Cm-TJG"/>
+                            <constraint firstAttribute="trailing" secondItem="ecp-qI-oju" secondAttribute="trailing" id="xTC-NL-CPu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageLbl" destination="Qau-lE-pDX" id="zXG-08-gwf"/>
+                        <outlet property="ageLbl2" destination="wbM-VI-Nep" id="vgk-SV-Etk"/>
+                        <outlet property="clubLbl" destination="Qfn-1z-PA6" id="xNF-KD-Po4"/>
+                        <outlet property="clubLbl2" destination="Ito-Ns-7E8" id="W9d-Jn-vam"/>
+                        <outlet property="imageView" destination="WXk-zc-itI" id="LQF-z1-IzE"/>
+                        <outlet property="nameLbl" destination="Gpd-Am-n8p" id="DcP-nn-omy"/>
+                        <outlet property="nationalityLbl" destination="tOz-cb-i0O" id="5Fn-kc-1jG"/>
+                        <outlet property="nationalityLbl2" destination="UVX-dr-yV3" id="jjr-Hg-HCM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LId-PN-pE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="-864"/>
+            <point key="canvasLocation" x="1504.8" y="-864.01799100449784"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vkk-2a-qmH">
@@ -122,4 +211,7 @@
             <point key="canvasLocation" x="-642" y="-116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="zlatan" width="500" height="500"/>
+    </resources>
 </document>

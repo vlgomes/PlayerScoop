@@ -20,7 +20,7 @@ struct Player {
     
     static func createPlayers() -> [Player]{
         
-        let ibra = Player(name: "Zlatan Ibrahimovic", age: 35, team: "Manchester United", nationality: "Sweden", image: #imageLiteral(resourceName: "Zlatan"), backgroundColor: UIColor(red:1.00, green:1.00, blue:0.00, alpha:1.0), textColor1: UIColor.white, textColor2: UIColor(red:0.00, green:0.00, blue:1.00, alpha:1.0))
+        let ibra = Player(name: "Zlatan Ibrahimovic", age: 35, team: "Manchester United", nationality: "Sweden", image: #imageLiteral(resourceName: "zlatan"), backgroundColor: UIColor(red:1.00, green:1.00, blue:0.00, alpha:1.0), textColor1: UIColor.white, textColor2: UIColor(red:0.00, green:0.00, blue:1.00, alpha:1.0))
         
         let cris = Player(name: "Cristiano Ronaldo", age: 32, team: "Real Madrid", nationality: "Portugal", image: #imageLiteral(resourceName: "CR"), backgroundColor: UIColor(red:0.86, green:0.08, blue:0.24, alpha:1.0), textColor1: UIColor.white, textColor2: UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0))
         
@@ -28,7 +28,7 @@ struct Player {
         
         let suarez = Player(name: "Luis Suárez", age: 30, team: "Barcelona", nationality: "Uruguay", image: #imageLiteral(resourceName: "Suarez"), backgroundColor: UIColor(red:0.00, green:1.00, blue:1.00, alpha:1.0), textColor1: UIColor.white, textColor2: UIColor(red:0.00, green:0.00, blue:1.00, alpha:1.0))
         
-        let bernardo = Player(name: "Bernardo Silva", age: 22, team: "Mónaco", nationality: "Portugal", image: #imageLiteral(resourceName: "Bernardo"), backgroundColor: UIColor(red:0.86, green:0.08, blue:0.24, alpha:1.0), textColor1: UIColor.white, textColor2: UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0))
+        let bernardo = Player(name: "Bernardo Silva", age: 22, team: "Mónaco", nationality: "Portugal", image: #imageLiteral(resourceName: "bernardo"), backgroundColor: UIColor(red:0.86, green:0.08, blue:0.24, alpha:1.0), textColor1: UIColor.white, textColor2: UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0))
         
         return [ibra, cris, messi, suarez, bernardo]
     }
